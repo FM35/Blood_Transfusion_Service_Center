@@ -9,8 +9,8 @@ Blood_data = pd.read_csv('Blood_Transfusion_Service_Center/transfusion.csv')
 #print(Blood_data.describe(include = 'all'))
 
 targets = Blood_data['whether he/she donated blood in March 2007']
-inputs = Blood_data[['Recency (months)', 'Frequency (times)',]]
-# 'Monetary (c.c. blood)', 'Time (months)'
+inputs = Blood_data[['Recency (months)', 'Frequency (times)']]
+# ,'Monetary (c.c. blood)', 'Time (months)'
 
 #Feature Scaling the inputs
 from sklearn.preprocessing import StandardScaler
